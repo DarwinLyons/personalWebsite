@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Darwin Lyons</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Varela+Round" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css"/>
+	<meta name="google-site-verification" content="ztoIXBo0b8fh4DCCDjqISEXojGxwy0IAj_owUQ6zra4" />
+	<meta name="keywords" content="Darwin Lyons, Actor, Director, Writer, Creator, Producer, Educator, Drama Teacher, Theatre, Film, Acting, Directing, Writing, Toronto">
+	<meta name="description" content="Darwin Lyons: Actor, Director, Creator in Theatre and Film">
+	<meta name="author" content="Darwin Lyons">
+	<meta property="og:title" content="Darwin Lyons">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://darwinlyons.com">
+	<meta property="og:image" content="http://darwinlyons.com/images/headshot5_opt.jpg">
+	<meta property="og:site_name" content="Darwin Lyons">
+	<meta property="og:description" content="Darwin Lyons: Actor, Director, Creator in Theatre and Film">
+</head>
+<body>
+	<header class="header wrapper">
+		<div class="intro">
+			<h1>Darwin Lyons</h1>
+			<div class="papaJoke">
+				<h2 class="joke jokeone">Yes, my name really is Darwin, no you're not the first person to ask me that</h2>
+			</div>
+			<ul>
+				<li><a href="past.html">actor</a></li>
+				<li>
+				<i class="fas fa-circle fa-xs"></i></li>
+				<li><a href="past.html#director">director</a></li>
+				<li>
+				<i class="fas fa-circle fa-xs"></i></li>
+				<li><a href="past.html#creator">creator</a></li>
+				<li>
+				<i class="fas fa-circle fa-xs"></i></li>
+				<li><a href="past.html#educator">educator</a></li>
+				<li>
+				<i class="fas fa-circle fa-xs"></i></li>
+				<li><a href="past.html#producer">producer</a></li>
+				<li>
+				<i class="fas fa-circle fa-xs"></i></li>
+			</ul>
+		</div> <!-- intro -->
+		<p class="hamburger"><i class="fas fa-bars"></i></p>
+		<nav class="nav">
+			<ul>
+				<li class="exitResponsive"><i class="fas fa-times"></i></li>
+				<li><a href="index.html" class="active">home</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="past.html">past projects</a></li>
+				<li><a href="connect.html">connect</a></li>
+			</ul>
+		</nav> <!-- nav -->
+	</header> <!-- header -->
+	<main class="wrapper">
+		<div class="main">
+			<div class="image">
+				<figure>
+					<img src="images/headshot5_opt.jpg" alt="a picture of Darwin Lyons">
+					<figcaption>
+						<p>photocred Calvin Thomas</p>
+					</figcaption> <!-- figcaption -->
+				</figure> <!-- figure -->
+			</div> <!-- image -->
+			<div class="introTwo">
+				<h2>I create things in theatre, film and on the internet.</h2>
+				<h3>I like funny things, but not mean funny things</h3>
+			</div>
+		</div> <!-- main -->
+	</main>
+	<footer class="footer">
+		<h4>Website by Darwin Lyons</h4>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+
+			$("p.hamburger").on('click', function(){
+				console.log('clicked')
+					$('.nav').toggleClass("show");
+			});
+
+			$(".exitResponsive").on("click", function(){
+				$(".nav").toggleClass("show");
+
+			});
+			});
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Connect with Darwin</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Varela+Round" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css"/>
+	<meta name="description" content="Connect with Darwin">
+</head>
+<body>
+	<header class="header wrapper">
+		<div class="intro">
+			<h1>Darwin Lyons</h1>
+			<div class="papaJoke">
+				<h2 class="joke">I got my name because my mom gave it to me, where did you get your name?</h2>
+			</div>
+			<ul>
+				<li><a href="past.html">actor</a></li>
+				<li>
+				<i class="fas fa-circle fa-xs"></i></li>
+				<li><a href="past.html#director">director</a></li>
+				<li>
+				<i class="fas fa-circle fa-xs"></i></li>
+				<li><a href="past.html#creator">creator</a></li>
+				<li>
+				<i class="fas fa-circle fa-xs"></i></li>
+				<li><a href="past.html#educator">educator</a></li>
+				<li>
+				<i class="fas fa-circle fa-xs"></i></li>
+				<li><a href="past.html#producer">producer</a></li>
+				<li>
+				<i class="fas fa-circle fa-xs"></i></li>
+			</ul>
+		</div> <!-- intro -->
+		<p class="hamburger"><i class="fas fa-bars"></i></p>
+		<nav class="nav">
+			<ul>
+				<li class="exitResponsive"><i class="fas fa-times"></i></li>
+				<li><a href="index.html">home</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="past.html">past projects</a></li>
+				<li><a href="connect.html" class="active">connect</a></li>
+			</ul>
+		</nav> <!-- nav -->
+	</header> <!-- header -->
+	<main class="wrapper connect">
+		<h2>connect with me!</h2>
+		<div class="middle">
+			<div class="middleText">
+				<div class="image">
+					<figure>
+						<img src="images/headshot1_opt.jpg" alt="a picture of Darwin Lyons">
+						<figcaption>
+							<p>photocred Calvin Thomas</p>
+						</figcaption> <!-- figcaption -->
+					</figure> <!-- figure -->
+				</div> <!-- image -->
+				<div class="love">
+					<p>I love working with new people on new projects, so send me a message!</p>
+				
+					<p><strong>Is it official business? I'm represented by <a href="http://talenthouse.ca/">The Talent House </a>, please <a href="mailto:info@talenthouse.ca">email them!</a></strong></p>
+				</div> <!-- love -->
+			</div> <!-- middleText -->
+			<form class="form" action="https://formspree.io/whoischarles@gmail.com"
+	      method="POST"">
+	      			<label for="name">Your Name:</label>
+				    <input type="text" name="name" id="name" class="name">
+				    <label for="email">Your Email Address:</label>
+			        <input type="email" name="_replyto" id="email" class= "email">
+			        <label for="message">Your (nice) Message:</label>
+			        <textarea name="message" cols="30" rows="10" id="message" class="message"></textarea>
+			        <input type="submit" value="Connect" class="input">
+			</form>	
+		</div> <!-- middle  -->
+		<div class="stalk">
+			<h3>Wanna do a bit more stalking before you connect?</h3> 
+			<p> Don't worry, we all get you. Just check out my social media:</p> 
+			<div class="social">
+				<div>
+					<a href="https://twitter.com/DarwinLyons?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @DarwinLyons</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+				<div class="insta">
+					<a href="https://www.instagram.com/hd_evolution/?hl=en"><i class="fab fa-instagram"></i>Instagram</a>
+				</div> <!-- insta -->
+			</div> <!-- social  -->
+		</div> <!-- stalk -->
+	</main>
+	<footer class="footer">
+		<h4>Website by Darwin Lyons</h4>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+
+			$("p.hamburger").on('click', function(){
+				console.log('clicked')
+					$('.nav').toggleClass("show");
+			});
+
+			$(".exitResponsive").on("click", function(){
+				$(".nav").toggleClass("show");
+
+			});
+			});
+
+		 $(function() {
+
+    	$('.input').on('click', function(){
+    	alert('Thanks for your message!');
+    })
+  }); 
+		
+	</script>
+</body>
+</html>

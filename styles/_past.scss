@@ -1,0 +1,213 @@
+
+
+
+// .video-container {
+//   position: relative;
+//   iframe {
+//   	width: 100%;
+//   	height: 100%;
+//   	position: absolute;
+//   	top: 0;
+//   	left: 0
+
+//   }
+
+  // &:after {
+  // 	content: '';
+  // 	padding-bottom: 56.25%;
+  // 	background: red;
+
+  // }
+// }
+
+// .video-container::after {
+//   content: '';
+//   padding-bottom: 56.25%; /* equal to 16:9 aspect ratio */
+//   display: block;
+//   background-color: red;
+// }
+
+.responsive {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pastNav ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		li a {
+			font-size: 2rem;
+			padding: 10px;
+			transition: color 0.3s ease, border 0.3s ease;
+			color: $text;
+			border-bottom: 2px solid $background;
+		}
+			a:hover {
+				color: $accent;
+				border-bottom: 2px solid $accent;
+			}
+		}
+.pastNav svg {
+	color: $accent;
+	padding-top: 5px;
+}
+
+.past {
+	padding: 0 20px;
+	a {
+		font-size: inherit;
+		color: $accentdark;
+		border-bottom: 2px solid $background;
+		transition: color 0.3s ease, border 0.3s ease;
+		&:hover {
+			color: $accentdark;
+			border-bottom: 2px solid $accentdark;
+		}
+	}
+}
+
+.past, .section, .around {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} 
+
+.past h3 {
+	font-size: 2rem;
+	border-bottom: 2px solid $accentdark;
+}
+
+.top {
+	position: relative;
+	a {
+		font-size: 1.3rem;
+	}
+}
+
+.topTwo {
+	position: absolute;
+	top: 0;
+	left: 220px;
+	}
+
+.past h4 {
+	font-size: 1.5rem;
+	border-bottom: 1px solid $accentdark;
+}
+
+.past p {
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.past .imageActor figcaption, .imageDirector figcaption, .imageWriter figcaption, .imageProducer figcaption, .imageEducator figcaption  {
+	display: none;
+}
+
+.past .imageActor:hover figcaption, .imageDirector:hover figcaption, .imageWriter:hover figcaption, .imageProducer:hover figcaption, .imageEducator:hover figcaption {
+	display: block;
+	background-color: rgba($background, 0.9);
+	width: 100%;
+	height: 100%;
+	p{
+		color: $text;
+		font-size: 1.5rem;
+		text-align: center;
+		padding: 75px;
+	}
+}
+
+.imageDirector:hover figcaption p, .imageProducer:hover figcaption p {
+	padding: 50px;
+}
+
+.imageWriter:hover figcaption p {
+	padding: 25px;
+
+}
+
+.text {
+	margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+	padding: 0 30px;
+	text-align: center;
+	font-style: italic;
+}
+
+.review a {
+	font-style: normal;
+	}
+
+
+.quote {
+	font-style: italic;
+	color: $accentdark;
+}
+
+.producer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+}
+@media (min-width: 450px) {
+	.pastNav ul {
+		flex-direction: row;
+		justify-content: center;
+		border-top: 2px solid $accent;
+	}
+
+	.quote {
+		width: 50%;
+	}
+
+}
+
+@media (min-width: 550px) {
+
+	.outsideEd {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		.around {
+			width: calc(50% - 20px);
+			margin-left: 10px;
+		}
+
+	}
+
+}
+
+@media (min-width: 800px) {
+	.gallery {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.imageActor, .imageDirector {
+		width: calc(50%);
+
+	}
+
+	.reviewAround {
+		display: flex;
+		.review{
+		 width: 33%;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body {
+	background-color: $background;
+}
+
+h1, h2, h3, h4 {
+	font-family: $headertext;
+	text-transform: uppercase;
+	color: $accentdark;
+}
+
+p, li {
+	font-family: $pagetext;
+	color: $text;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Cabin', sans-serif;
+	display: inline-block;
+	position: relative;
+	color: inherit;
+	font-size: 1rem;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	display: block;
+}
+
+.hamburger, .exitResponsive {
+	cursor: pointer;
+}
